@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-mongoose.connect(process.env.MONG0DB_URI || 'mongodb://localhost/carsellapp');
+mongoose.connect('mongodb+srv://ritesh:Ritesh@123@cluster0.tkdvm.mongodb.net/ritesh?retryWrites=true&w=majority');
 
 var userSchema = mongoose.Schema({
     name: String,
