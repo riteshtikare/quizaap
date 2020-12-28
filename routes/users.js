@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-mongoose.connect(process.env.MONG0DB_URL || 'mongodb://localhost/carsellapp');
+mongoose.connect(process.env.MONG0DB_URI || 'mongodb://localhost/carsellapp');
 
 var userSchema = mongoose.Schema({
     name: String,
